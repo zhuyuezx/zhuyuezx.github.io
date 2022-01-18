@@ -29,7 +29,8 @@ twitter_username: zhuyuezx1
 github_username:  zhuyuezx
 
 # Build settings
-theme: minima
+# removed minima theme as it is now a regular theme
+# theme: minima
 plugins:
   - jekyll-feed
 
