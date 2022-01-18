@@ -28,6 +28,14 @@ url: "https://zhuyuezx.github.io" # the base hostname & protocol for your site, 
 twitter_username: zhuyuezx1
 github_username:  zhuyuezx
 
+# adding the author name
+author: Jason Zhu
+linkedin_username: yuezhexuan-zhu-159a5a223
+
+
+# add a copyright
+copyright: "Yuezhexuan Zhu"
+
 # Build settings
 # removed minima theme as it is now a regular theme
 # theme: minima
