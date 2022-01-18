@@ -32,9 +32,11 @@ github_username:  zhuyuezx
 author: Jason Zhu
 linkedin_username: yuezhexuan-zhu-159a5a223
 
-
 # add a copyright
 copyright: "Yuezhexuan Zhu"
+
+# adding title-logo
+title-logo: /images/title-logo.png
 
 # Build settings
 # removed minima theme as it is now a regular theme
