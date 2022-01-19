@@ -28,6 +28,11 @@ url: "https://zhuyuezx.github.io" # the base hostname & protocol for your site, 
 twitter_username: zhuyuezx1
 github_username:  zhuyuezx
 
+# enable showing excerpts and some details
+show_excerpts: true
+# only get the first sentence of excerpt
+excerpt_separator: .
+
 # adding the author name
 author: Jason Zhu
 linkedin_username: yuezhexuan-zhu-159a5a223
