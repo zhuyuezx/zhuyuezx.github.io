@@ -13,18 +13,32 @@ layout: default
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
+        <div class="feed-card">
+          <div class="card-image">
+              {%- assign postImage = post.image | relative_url -%}
+              {%- if postImage -%}
+                  <img src="{{postImage}}" alt="" class="featured-img">
+              {%- else -%}
+                  {%- assign postImage = "/images/image-default.jpg" | relative_url -%}
+                  <img src="{{postImage}}" alt="" class="featured-img">
+              {%- endif -%}
+          </div>
+          <div class="card-content">
+              <div class="card-title">
+                  <a class="post-link" href="{{ post.url | relative_url }}">
+                      {{ post.title | escape }}
+                  </a>
+              </div>
+              <div class="excerpt">
+                  {%- assign postExcerpt = post.excerpt | strip_html | escape -%}
+                  <span class="excerpt">{{postExcerpt}}</span>
+              </div>
+              <div class="card-date">
+                  {%- assign postDate = post.date | date: "%b %d, %Y" -%}
+                  <span class="date">{{postDate}}</span>
+              </div>
+          </div>
+      </div>
       {%- endfor -%}
     </ul>
 
