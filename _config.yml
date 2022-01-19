@@ -27,6 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zhuyuezx.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: zhuyuezx1
 github_username:  zhuyuezx
+bilibili_username: zhuyuezx
 
 # enable showing excerpts and some details
 show_excerpts: true
