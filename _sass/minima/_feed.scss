@@ -8,10 +8,11 @@
     border-top: lightgray;
     border-width: 2px;
     border-top-style: solid;
+    background-color: black;
 
     .card-content {
         display: grid;
-        background-color: black;
+        margin-left: 15px;
         grid-template-rows: min-content auto min-content;
         grid-template-areas: 
             "title"
