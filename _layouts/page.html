@@ -13,6 +13,19 @@ layout: default
 
   {%- assign feedType = page.feed-type -%}
   {%- if feedType == "Coding" or feedType == "Daily" -%}
+    <h2>Featured Post</h2>
+    {%- assign displayOffset = 0 -%}
+    {%- assign displayLimit = 1 -%}
+    {%- assign sectionName = "featured-post" -%}
+    {% include feed.html %}
+  {%- endif -%}
+
+  {%- assign feedType = page.feed-type -%}
+  {%- if feedType == "Coding" or feedType == "Daily" -%}
+    <h2>Posts</h2>
+    {%- assign displayOffset = 1 -%}
+    {%- assign displayLimit = null -%}
+    {%- assign sectionName = "feed" -%}
     {% include feed.html %}
   {%- endif -%}
 
