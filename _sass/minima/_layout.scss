@@ -262,16 +262,18 @@
 
 .feed-card{
   display: grid;
-  grid-template-columns: 50% 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 270px;
   column-gap: 10px;
   margin-top: 10px;
-  border-top: lightgray;
+  border: lightgray;
   border-width: 2px;
-  border-top-style: solid;
+  border-style: solid;
+  background-color: rgb(230, 230, 230);
 
   .card-content {
       display: grid;
+      margin-left: 15px;
       grid-template-rows: min-content auto min-content;
       grid-template-areas: 
           "title"
@@ -310,7 +312,7 @@
   }
 
   .date {
-      color: darkgray;
+      color: rgb(50, 50, 50);
       font-size: 10pt;
   }
 }
