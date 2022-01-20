@@ -32,7 +32,7 @@ bilibili_username: zhuyuezx
 # enable showing excerpts and some details
 show_excerpts: true
 # only get the first sentence of excerpt
-excerpt_separator: .
+#excerpt_separator: .
 
 # adding the author name
 author: Jason Zhu
@@ -43,6 +43,13 @@ copyright: "Yuezhexuan Zhu"
 
 # adding title-logo
 title-logo: /images/title-logo.png
+
+# enable google analytics
+google_analytics: UA-NNNNNNNN-N
+
+# enable disqus comment
+disqus:
+  shortname: Jason Zhu
 
 # Build settings
 # removed minima theme as it is now a regular theme

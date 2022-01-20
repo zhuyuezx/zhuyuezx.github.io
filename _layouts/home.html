@@ -30,7 +30,7 @@ layout: default
                   </a>
               </div>
               <div class="excerpt">
-                  {%- assign postExcerpt = post.excerpt | strip_html | escape -%}
+                  {%- assign postExcerpt = post.excerpt | strip_html | truncate: 400 | escape -%}
                   <span class="excerpt">{{postExcerpt}}</span>
               </div>
               <div class="card-date">
