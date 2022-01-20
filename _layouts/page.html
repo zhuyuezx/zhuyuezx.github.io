@@ -29,4 +29,10 @@ layout: default
     {% include feed.html %}
   {%- endif -%}
 
+  {%- assign feedType = page.feed-type -%}
+  {%- if feedType == "Archive" -%}
+    {%- assign sectionName = "archive" -%}
+    {% include archive.html %}
+  {%- endif -%}
+
 </article>

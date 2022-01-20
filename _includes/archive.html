@@ -1,0 +1,56 @@
+<section class="archive">
+    <h2>Tags and Count</h2>
+    {%- assign daily_counter = 0 -%}
+    {%- assign code_counter = 0 -%}
+    {%- for post in site.posts -%}
+        {%- if post.category == "Daily" -%}
+            {%- assign daily_counter = daily_counter | plus: 1 -%}
+        {%- else -%}
+            {%- assign code_counter = code_counter | plus: 1 -%}
+        {%- endif -%}
+    {%- endfor -%}
+
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title == "Coding Blog" or my_page.title == "Daily Post" -%}
+            {%- if my_page.title == "Coding Blog" -%} {%- assign count = code_counter -%} {%- endif -%}
+            {%- if my_page.title == "Daily Post" -%} {%- assign count = daily_counter -%} {%- endif -%}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">
+                &#128279;{{ my_page.title | escape }} ({{count}})
+            </a><br>
+        {%- endif -%}
+    {%- endfor -%}
+
+    <br><h2>Archive</h2>
+    {%- assign feedPosts = site.posts -%}
+    {%- for post in feedPosts -%}
+        <div class="postList">
+            <div class="card-image">
+                {%- assign postImage = post.image | relative_url -%}
+                {%- if postImage -%}
+                    <img src="{{postImage}}" alt="" class="featured-img">
+                {%- else -%}
+                    {%- assign postImage = "/images/image-default.jpg" | relative_url -%}
+                    <img src="{{postImage}}" alt="" class="featured-img">
+                {%- endif -%}
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    {%- assign postTitle = post.title | escape -%}
+                    {%- assign postUrl = post.url | relative_url -%}
+                    <span class = "title"><a href="{{postUrl}}" class="post-link">{{postTitle}}</a></span>
+                </div>
+                <div class="excerpt">
+                    {%- assign postExcerpt = post.excerpt | strip_html | truncate: 100 | escape -%}
+                    <span class="excerpt">{{postExcerpt}}</span>
+                </div>
+                <div class="card-date">
+                    {%- assign postDate = post.date | date: "%b %d, %Y" -%}
+                    <span class="date">{{postDate}}</span>
+                </div>
+            </div>
+        </div>
+    {%- endfor -%}
+</section>

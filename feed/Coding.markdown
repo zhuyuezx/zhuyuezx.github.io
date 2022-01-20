@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Coding
+title: Coding Blog
 feed-type: Coding
 permalink: /feed/Coding
 ---

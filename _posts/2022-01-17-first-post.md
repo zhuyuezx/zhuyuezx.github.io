@@ -2,7 +2,7 @@
 layout: post
 title:  "My first post"
 date:   2022-01-17 17:27:24 -0500
-categories: Coding
+category: Coding
 image: /images/image-1.jpg
 ---
 Hello world!

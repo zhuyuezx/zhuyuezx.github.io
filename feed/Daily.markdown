@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Daily
+title: Daily Post
 feed-type: Daily
 permalink: /feed/Daily
 ---
