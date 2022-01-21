@@ -262,37 +262,29 @@
 
 .home-card{
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 270px;
-  column-gap: 10px;
-  margin-top: 10px;
+  grid-template-columns: 13fr 7fr;
+  grid-template-rows: 1fr;
+  column-gap: 5px;
+  margin-top: 30px;
   border: lightgray;
   border-width: 2px;
   border-style: solid;
   background-color: rgb(230, 230, 230);
+  align-items: center;
 
   .card-content {
       margin-left: 5px;
       grid-template-rows: min-content auto min-content;
-      grid-template-areas: 
-          "title" 
-          "category"
-          "excerpt"
-          "date";
+      grid-template-areas:   
+        "title" 
+        "excerpt"
+        "date"
+        "link";
   }
 
   .card-title {
-    display: flex;
-    display: inline-block;
       grid-area: title;
       align-content: start;
-  }
-
-  .category {
-    display: inline-block;
-      grid-area: category;
-      align-content: start;
-
   }
 
   .card-excerpt {
@@ -304,6 +296,10 @@
   .card-date {
       grid-area: date;
       align-content: end;
+  }
+
+  .link-button {
+    grid-row-end: 3;
   }
 
   // styling
