@@ -26,8 +26,11 @@ layout: default
           <div class="card-content">
               <div class="card-title">
                   <a class="post-link" href="{{ post.url | relative_url }}">
-                      {{ post.title | escape }}
+                      {{ post.title | escape }} 
                   </a>
+              </div>
+              <div class="category">
+                <p>&#128279;{{post.category}}</p>
               </div>
               <div class="excerpt">
                   {%- assign postExcerpt = post.excerpt | strip_html | truncate: 400 | escape -%}
