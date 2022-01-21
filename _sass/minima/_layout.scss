@@ -272,21 +272,31 @@
   background-color: rgb(230, 230, 230);
 
   .card-content {
-      display: grid;
       margin-left: 5px;
       grid-template-rows: min-content auto min-content;
       grid-template-areas: 
-          "title"
+          "title" 
+          "category"
           "excerpt"
           "date";
   }
 
   .card-title {
+    display: flex;
+    display: inline-block;
       grid-area: title;
       align-content: start;
   }
 
+  .category {
+    display: inline-block;
+      grid-area: category;
+      align-content: start;
+
+  }
+
   .card-excerpt {
+    display: grid;
       grid-area: excerpt;
       align-content: start;
   }
