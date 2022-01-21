@@ -1,0 +1,44 @@
+{%- assign counter = 1 -%}
+    {%- for post in site.posts -%}
+    {%- if post.category == catrgory_to_find and counter == 1 -%}
+      <div class="home-card">
+        <div class="card-image">
+            {%- assign postImage = post.image | relative_url -%}
+            {%- if postImage -%}
+                <img src="{{postImage}}" alt="" class="featured-img">
+            {%- else -%}
+                {%- assign postImage = "/images/image-default.jpg" | relative_url -%}
+                <img src="{{postImage}}" alt="" class="featured-img">
+            {%- endif -%}
+        </div>
+        <div class="card-content">
+            <div class="card-title">
+                {%- assign postTitle = post.title | escape -%}
+                {%- assign postUrl = post.url | relative_url -%}
+                <span class = "title"><a href="{{postUrl}}" class="post-link">{{postTitle}}</a></span>
+            </div>
+            <div class="excerpt">
+                {%- assign postExcerpt = post.excerpt | strip_html | truncate: 300 | escape -%}
+                <span class="excerpt">{{postExcerpt}}</span>
+            </div><br>
+            <div class="card-date">
+                {%- assign postDate = post.date | date: "%b %d, %Y" -%}
+                <span class="date">{{postDate}}</span>
+            </div><br>
+            <div class="link-button">
+                {%- assign default_paths = site.pages | map: "path" -%}
+                {%- assign page_paths = site.header_pages | default: default_paths -%}
+                {%- for path in page_paths -%}
+                    {%- assign my_page = site.pages | where: "path", path | first -%}
+                    {%- if my_page.title == link_to_find -%}
+                        <a class="page-link" href="{{ my_page.url | relative_url }}">
+                            <button>More Post about {{post.category}}</button>
+                        </a><br>
+                    {%- endif -%}
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+    {%- assign counter = counter | plus: 1 -%}
+    {%- endif -%}
+    {%- endfor -%}

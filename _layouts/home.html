@@ -10,41 +10,20 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-        <div class="home-card">
-          <div class="card-image">
-              {%- assign postImage = post.image | relative_url -%}
-              {%- if postImage -%}
-                  <img src="{{postImage}}" alt="" class="featured-img">
-              {%- else -%}
-                  {%- assign postImage = "/images/image-default.jpg" | relative_url -%}
-                  <img src="{{postImage}}" alt="" class="featured-img">
-              {%- endif -%}
-          </div>
-          <div class="card-content">
-              <div class="card-title">
-                  <a class="post-link" href="{{ post.url | relative_url }}">
-                      {{ post.title | escape }} 
-                  </a>
-              </div>
-              <div class="category">
-                <p>&#128279;{{post.category}}</p>
-              </div>
-              <div class="excerpt">
-                  {%- assign postExcerpt = post.excerpt | strip_html | truncate: 400 | escape -%}
-                  <span class="excerpt">{{postExcerpt}}</span>
-              </div>
-              <div class="card-date">
-                  {%- assign postDate = post.date | date: "%b %d, %Y" -%}
-                  <span class="date">{{postDate}}</span>
-              </div>
-          </div>
-      </div>
-      {%- endfor -%}
-    </ul>
 
+    {%- assign catrgory_to_find = "Coding" -%}
+    {%- assign link_to_find = "Coding Blog" -%}
+    {% include show_first.html %}
+
+    {%- assign catrgory_to_find = "Research" -%}
+    {%- assign link_to_find = "Research" -%}
+    {% include show_first.html %}
+    
+    {%- assign catrgory_to_find = "Daily" -%}
+    {%- assign link_to_find = "Daily Post" -%}
+    {% include show_first.html %}
+
+    <br>
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 
