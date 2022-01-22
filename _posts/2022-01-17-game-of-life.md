@@ -3,7 +3,7 @@ layout: post
 title:  "Game of Life by Processing"
 date:   2022-01-17 16:27:24 -0500
 category: Coding
-image: /images/image-1.jpg
+image: /images/image-2.jpg
 video: https://www.youtube.com/embed/EBoWzKMOGew
 ---
 Hello world!
