@@ -8,9 +8,11 @@ video: https://www.youtube.com/embed/EBoWzKMOGew
 ---
 Hello world!
 
-![game of life](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
-
 ## Here are things I will be writing about
 1. this
 2. that
 3. the other thing
+
+<iframe width="100%" height="574"
+      src="https://www.youtube.com/embed/EBoWzKMOGew">
+    </iframe>

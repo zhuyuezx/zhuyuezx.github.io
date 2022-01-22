@@ -23,9 +23,7 @@ layout: default
 
   <div class="post-content e-content" itemprop="articleBody">
     {%- if page.video -%}
-    <iframe width="100%" height="574"
-      src="{{- page.video | relative_url -}}">
-    </iframe>
+    
     {%- endif -%}
     {{ content }}
   </div>
