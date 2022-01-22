@@ -7,8 +7,6 @@ image: /images/image-1.jpg
 ---
 Hello world!
 
-https://user-images.githubusercontent.com/56620120/150616927-2264fa0a-e448-4f48-b744-730e2602e308.mp4
-
 ## Here are things I will be writing about
 1. this
 2. that
