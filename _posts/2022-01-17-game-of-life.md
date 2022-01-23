@@ -32,6 +32,11 @@ Thus, **I decided to use Processing to create my own version of the game.**
 
 I use java IDE instead of the Processing terminal for this code. Still, this can be transfromed to processing terminal by deleting the PApplet part:
 
+**And here is effect of my first version code, and you can also get the code on my github repo "Processing Tutorial".**
+<iframe width="100%" height="574"
+  src="https://www.youtube.com/embed/EBoWzKMOGew">
+</iframe>
+
 The rpogram enable user to input initial value by using left and right mouse button, while **left click is to color it balck and right click is to make it white**. Then, by **pressing "Space" key you can start and stop the game process**. When in the drawing mode, you can alter cells as you like and then press space key to keep on, and vice versa.
 {% highlight java %}
 import processing.core.PApplet;
@@ -155,8 +160,3 @@ public class operator extends PApplet {
     }
 }
 {% endhighlight %}
-
-**And here is effect of my first version code, and you can also get the code on my github repo "Processing Tutorial".**
-<iframe width="100%" height="574"
-  src="https://www.youtube.com/embed/EBoWzKMOGew">
-</iframe>
