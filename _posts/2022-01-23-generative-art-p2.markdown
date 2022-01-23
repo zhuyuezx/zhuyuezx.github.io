@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Generative Arts based on Processing Part2"
-date:   2022-01-19 23:44:00
+date:   2022-01-23 03:44:00
 category: Coding
 image: /images/image-9.jpg
 ---
@@ -12,7 +12,7 @@ Still, I made some customization to his design and here I will show my works bas
 I want to say thank you to this youtuber, and he showed me unlimited potential of Processing.
 
 ### 3D Rotation Splitting Grid 
-<iframe width="100%" height="646"
+<iframe width="100%" height="600"
   src="https://www.youtube.com/embed/oCQHQv5qmsY">
 </iframe>
 
