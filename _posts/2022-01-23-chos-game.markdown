@@ -1,0 +1,99 @@
+---
+layout: post
+title:  "Fractals that Rise from Chaos Game"
+date:   2022-01-23 8:50:00
+category: Coding
+image: /images/image-12.jpg
+---
+In mathematics, the term chaos game originally referred to a method of creating a fractal, using a polygon and an initial point selected at random inside it.
+
+**The procedure to create a fractal can be split into three steps**:
+1. The chaos game start from one arbitary point and several verticies located on the 2D surface (we can extend to higher dimension later)
+2. Choosen one vertex based on game rule and move the starting point towards the chosen vertex by a fixed propotion of distance and mark the point after transformation
+3. Repeat former two steps endlessly. If verticies and rules are set properly, the fractal would appear with iteration accumulation
+
+One of the basic settings is to choose three vertices and the starting point from one of these three verticies, and each time choose one arbitary vertex and move $$\frac{1}{2}$$ distance towards that vertex.
+
+**Then, following the procedures, you would see [Sierpinski Triangle](https://en.wikipedia.org/wiki/Sierpinski_triangle) appear gradually**. (intuitive gif copied from wikipedia)
+
+![illustration](/post-images/Chaos-Game/1.gif)
+
+### Applying More Rules
+By altering number of verticies and rules of selecting next vertex, we can create a variety of fractals.
+
+The following three are settings of four verticies each with the rules of **not being able to pick the same, the second next, and the next vertex for the next pick**:
+![lst1](/post-images/Chaos-Game/lst1.jpg)
+
+Moreover, we can have more verticies, more complicated rules or even alter the travel distance for the moving staring point.
+
+* The left one is setting of five verticies and not allowing picking same vertex twice.
+* The middle one is four verticies while the next pick cannot neighbour previous pick if two previous picks are the same.
+* The right one is four verticies plus the center of the square. Five verticies in total with travel distance of $$2/3$$.
+![lst2](/post-images/Chaos-Game/lst2.jpg)
+
+### Chaos Game in 3D
+
+**Although we need to consider much more in 3D space, the basic idea is just to move all the rules from 2D to 3D in a transformative way.**
+
+For instance, to construct a Sierpinski Triangle in 3D (or Tetrahedron), we need four corresponding verticies with a 3D vertor jumping in 3D space. Then, 3D version of it would gradually appear. **Here is my recording with virtual camera and fixed filming angle**:
+
+<iframe width="100%" height="600"
+  src="https://www.youtube.com/embed/Vqmgq-P6XZY">
+</iframe>
+
+### Core Code Logic
+**This is the core logic code for 4 verticies with rules of not allowing the second next vertex for next pick.**
+
+**Also, you can customize the code as you want and find you own special fractal. You can also check my [github repo](https://github.com/zhuyuezx/Processing_Tutorial/tree/master/src/main/java/proc/ChaosGame) for more variations:**
+
+{% highlight java %}
+PVector[] points;
+int numberOfNodes = 4;
+float percent = 0.5F;
+PVector current;
+int previous;
+
+public void setup() {
+  size(1000, 1000);
+  points = new PVector[numberOfNodes];
+
+  colorMode(HSB);
+  background(0);
+  stroke(238);
+
+  translate(width / 2, height / 2);
+  for (int i = 0; i < numberOfNodes; i++) {
+    float angle = i * TWO_PI / numberOfNodes;
+    points[i] = PVector.fromAngle(angle - PI / 4);
+    points[i].mult(600);
+    if (i > 0) {
+      stroke(0, 0, 238);
+      line(points[i].x, points[i].y, points[i - 1].x, points[i - 1].y);
+    }
+  }
+  line(points[0].x, points[0].y, points[points.length - 1].x, points[points.length - 1].y);
+
+
+  current = new PVector(random(width), random(height));
+
+  strokeWeight(4);
+}
+
+public void draw() {
+  translate(width / 2, height / 2);
+  for (int i = 0; i < 1000; i++) {
+    strokeWeight(1);
+
+    int r = (int) random(points.length);
+    stroke(255 / numberOfNodes * r, 200, 255);
+    PVector next = points[r];
+    if (r != (previous + 2) % 4) {
+      current.x = lerp(current.x, next.x, percent);
+      current.y = lerp(current.y, next.y, percent);
+      point(current.x, current.y);
+      previous = r;
+    }
+  }
+}
+
+{% endhighlight %}
