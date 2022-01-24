@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fractals that Rise from Chaos Game"
-date:   2022-01-23 8:50:00
+date:   2022-01-23 08:50:00
 category: Coding
 image: /images/image-12.jpg
 ---
