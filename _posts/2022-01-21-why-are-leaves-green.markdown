@@ -5,6 +5,8 @@ date: 2022-01-21 00:16:00
 category: Research
 image: /images/image-8.jpg
 ---
+**Leaves are always linked with the color "GREEN", and if you ask somebody: "why are leaves green?" The answer would probably be: "Because of the cholorphyll, and they are green." However, this has not answered the core question - so why cholophyll is green? With such doubt, I started the research about this topic and gained a lot throughout the process.**
+
 This research was conducted in June 2020. Although it seems nosense, actually there's a whole lot story about it - we can even start from the origin of cell.
 
 In one paragraph, we can seperate my personal explainations into four connected steps:
