@@ -35,7 +35,9 @@ One example is to use perlin noise to generate terrain. Here is the 3D terrain c
 With perlin noise, we can get random 2D vector for each pixel value. Then, we can consider these vectors as **force that particles would receive at those points**, and this is exactly the idea of flowfield. 
 
 ### Here is the an arbitary flowfield I created:
-![flowfield](/post-images/Flowfield/2.png)
+You can think of those vectors as seaweed that drifts alongwith invisible water flows, where we can then add particles in.
+
+![flowfield](/post-images/Flowfield/2.gif)
 
 ### Finally, we can add particles in and draw their traces. 
 By applying HSB color settings according to their x postions, and adjusting all aspects of parameters like colorRange, interval length, particle size, particle amount... I can create interesting graphs with no limit!
