@@ -11,11 +11,13 @@ This research was conducted in June 2020. Although it seems nosense, actually th
 
 In one paragraph, we can seperate my personal explainations into four connected steps:
 1. Start fromt the definition of leaf - how shall we define leaf? 
+![leaf1](/post-images/Green-Leaf/1.gif)
 2. What is the definition of color and is cholorphyll essential for photosynthesis?
+![leaf2](/post-images/Green-Leaf/2.gif)
 3. Major difference between light reaction and dark reaction of photosynthesis
+![leaf3](/post-images/Green-Leaf/3.gif)
 4. As lifes come from ocean - how speciality of aqua environment shape photosynthesis
 5. ancient biological niche and **"purple earth" hypothesis**
-
 ![purple earth](/post-images/Green-Leaf/1.jpg)
 
 The underlying video is the final result of my research. Sorry that all the contents are in Chinese.
