@@ -12,7 +12,7 @@ In one paragraph, there are **six strategies** in total (gif source: le peuple m
     ![flying](/post-images/Why-Can-Bird-Fly/2.gif)
     2. Powerful air sacs system and double-loop breathing strategy
     ![flying](/post-images/Why-Can-Bird-Fly/1.gif)
-    3. Higher body temperature bringing greater metabolism
+    3. Higher body temperature bringing stronger metabolism
     ![flying](/post-images/Why-Can-Bird-Fly/4.gif)
 * **For the aspects that reduce gravity:**
     1. Specialized bones that balance weight and firmness
