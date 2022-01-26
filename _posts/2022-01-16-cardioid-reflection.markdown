@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Intersting Cardioid Shape from Plate Reflection"
+title:  "Interesting Cardioid Shape from Plate Reflection"
 date:   2022-01-16 03:29:00
 category: Daily
 image: /images/image-16.jpg
