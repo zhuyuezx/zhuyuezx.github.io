@@ -23,6 +23,7 @@ let svgSelect;
 let svgInput;
 let svgButton1;
 let svgButton2;
+let returnButton;
 
 function setup() {
   //createFullscreenCanvas();
@@ -88,9 +89,14 @@ function draw() {
   text(labelSW, 10, 200);
   var labelSvgFile = "图案：";
   text(labelSvgFile, 10, 240);
+  textSize(12);
+  var statement1 = "国家轮廓为简化,模糊轮廓";
+  text(statement1, 150, 275);
+  var statement2 = "仅作演示，不具有政治指向";
+  text(statement2, 150, 290);
   textSize(20);
   var labelSelfInput = "自定义输入：";
-  text(labelSelfInput, 10, 285);
+  text(labelSelfInput, 10, 320);
 }
 
 function rotateVectors() {

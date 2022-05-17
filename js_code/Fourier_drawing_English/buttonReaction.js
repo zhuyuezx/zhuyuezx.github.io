@@ -24,7 +24,7 @@ function sideBarSetup() {
   swSlider.style('width', '160px');
   // setup svg selector
   svgSelect = createSelect();
-  svgSelect.position(100, 215);
+  svgSelect.position(110, 215);
   svgSelect.style('width', '120px');
   svgSelect.style('height', '40px');
   svgSelect.style('font-size', '18px');
@@ -41,17 +41,27 @@ function sideBarSetup() {
 
   // setup svg input box and button
   svgInput = createInput();
-  svgInput.position(80, 300);
+  svgInput.position(110, 300);
   svgInput.style('width', '120px');
   svgInput.style('height', '40px');
   svgInput.style('font-size', '18px');
 
   svgButton1 = createButton('update');
-  svgButton1.position(80, svgInput.y + svgInput.height + 10);
+  svgButton1.position(110, svgInput.y + svgInput.height + 10);
   svgButton1.mousePressed(button1Reaction);
   svgButton2 = createButton('clear');
-  svgButton2.position(140, svgInput.y + svgInput.height + 10);
+  svgButton2.position(170, svgInput.y + svgInput.height + 10);
   svgButton2.mousePressed(button2Reaction);
+
+  // setup return button
+  returnButton = createButton('Return');
+  returnButton.position(10, height - 50);
+  returnButton.style('width', '80px');
+  returnButton.style('height', '40px');
+  returnButton.style('font-size', '20px');
+  returnButton.mousePressed(function() {
+    window.location.href = '/coding/2022/05/16/Fourier-Drawing.html';
+  });
 }
 
 function setStaticMode() {

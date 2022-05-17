@@ -23,6 +23,7 @@ let svgSelect;
 let svgInput;
 let svgButton1;
 let svgButton2;
+let returnButton;
 
 function setup() {
   //createFullscreenCanvas();
@@ -88,9 +89,16 @@ function draw() {
   text(labelSW, 10, 200);
   var labelSvgFile = "Pattern:";
   text(labelSvgFile, 10, 240);
+  textSize(12);
+  // Included contours are partial and simplified, 
+  // only for illustration purpose.
+  var statement1 = "Included patterns are partial and simplified,";
+  var statement2 = "no political inference, only for illustration.";
+  text(statement1, 110, 270);
+  text(statement2, 110, 285);
   textSize(20);
   var labelSelfInput = "Self Input:";
-  text(labelSelfInput, 10, 285);
+  text(labelSelfInput, 10, 320);
 }
 
 function rotateVectors() {

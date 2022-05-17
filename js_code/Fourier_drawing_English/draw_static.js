@@ -46,12 +46,12 @@ function drawPathStatic() {
     while (route.length > TWO_PI / rotateSpeed + 1) {
         route.shift();
     }
-    route.push(p5.Vector.mult(this.pen, rate));
+    route.push(p5.Vector.mult(this.pen, 1));
     stroke(255, 255, 0);
     strokeWeight(swSlider.value());
     beginShape();
     route.forEach(function (v) {
-        vertex(v.x, v.y);
+        vertex(v.x * rate, v.y * rate);
     });
     endShape();
 }
