@@ -36,6 +36,7 @@ function sideBarSetup() {
   svgSelect.option('澳洲轮廓');
   svgSelect.option('中国轮廓');
   svgSelect.option('英国轮廓');
+  svgSelect.option('巴西轮廓')
   svgSelect.changed(svgSelectReaction);
 
   // setup svg input box and button
@@ -113,6 +114,9 @@ function svgSelectReaction() {
         initialize();
     } else if (selectVal == "英国轮廓") {
         path = getPath("svg_files/Britain.svg");
+        initialize();
+    } else if (selectVal == "巴西轮廓") {
+        path = getPath("svg_files/Brazil.svg");
         initialize();
     }
 }

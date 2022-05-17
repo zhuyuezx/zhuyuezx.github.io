@@ -36,6 +36,7 @@ function sideBarSetup() {
   svgSelect.option('Australia Contour');
   svgSelect.option('China Contour');
   svgSelect.option('Britain Contour');
+  svgSelect.option('Brazil Contour');
   svgSelect.changed(svgSelectReaction);
 
   // setup svg input box and button
@@ -113,6 +114,9 @@ function svgSelectReaction() {
         initialize();
     } else if (selectVal == "Britain Contour") {
         path = getPath("svg_files/Britain.svg");
+        initialize();
+    } else if (selectVal == "Brazil Contour") {
+        path = getPath("svg_files/Brazil.svg");
         initialize();
     }
 }

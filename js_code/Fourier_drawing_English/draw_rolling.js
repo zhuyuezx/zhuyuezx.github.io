@@ -50,7 +50,7 @@ function drawPathRolling() {
         });
         lastRate = rate;
     }
-    if (route.length > TWO_PI / rotateSpeed + 1) {
+    while (route.length > TWO_PI / rotateSpeed + 1) {
         route.shift();
     }
     route.push(p5.Vector.mult(this.pen, 1));
