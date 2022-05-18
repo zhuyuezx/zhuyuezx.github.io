@@ -10,7 +10,7 @@ After watching [3blue1brown's video](https://www.youtube.com/watch?v=r6sGWTCMz2k
 
 This is all based on this simple equation, where you can get the detail in video through link uphead.
 
-![equation](/post-images/Fourier-Drawing/equation1.jpg)
+![equation](/post-images/Fourier-Drawing/equation1.png)
 
 Feel free to try yourself, **and you can find the source 
 code at [my github site](https://github.com/zhuyuezx/Processing_Tutorial/tree/master/src/main/java/P5_JS%20project/Fourier_drawing).**
