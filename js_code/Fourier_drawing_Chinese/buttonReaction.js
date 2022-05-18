@@ -79,7 +79,7 @@ function setStaticMode() {
   rateSlider.style('width', '160px');
   // reset speed slider
   speedSlider.remove();
-  speedSlider = createSlider(0.001, 0.05, 0.01, 0.001);
+  speedSlider = createSlider(0.001, 0.05, constrain(rotateSpeed, 0.001, 0.05), 0.001);
   speedSlider.position(150, 140);
   speedSlider.style('width', '160px');
 }
@@ -89,12 +89,12 @@ function setRollingMode() {
 
   // reset rate slider
   rateSlider.remove();
-  rateSlider = createSlider(1, 15, 3, 0.1);
+  rateSlider = createSlider(1, 15, 5, 0.1);
   rateSlider.position(150, 100);
   rateSlider.style('width', '160px');
   // reset speed slider
   speedSlider.remove();
-  speedSlider = createSlider(0.0005, 0.02, 0.003, 0.0005);
+  speedSlider = createSlider(0.0005, 0.02, constrain(rotateSpeed, 0.0005, 0.002), 0.0005);
   speedSlider.position(150, 140);
   speedSlider.style('width', '160px');
 }
