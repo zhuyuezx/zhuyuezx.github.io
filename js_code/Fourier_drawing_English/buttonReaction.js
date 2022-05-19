@@ -11,7 +11,7 @@ function sideBarSetup() {
   numVectirSlider.position(210, 60);
   numVectirSlider.style('width', '160px');
   // setup rate slider
-  rateSlider = createSlider(0.2, 2.5, 1, 0.1);
+  rateSlider = createSlider(0.1, 2.5, 1, 0.1);
   rateSlider.position(210, 100);
   rateSlider.style('width', '160px');
   // setup speed slider
@@ -75,7 +75,7 @@ function setStaticMode() {
   rate = lastRate = 1;
   // reset rate slider
   rateSlider.remove();
-  rateSlider = createSlider(0.2, 2.5, 1, 0.1);
+  rateSlider = createSlider(0.1, 2.5, 1, 0.1);
   rateSlider.position(210, 100);
   rateSlider.style('width', '160px');
   // reset speed slider
