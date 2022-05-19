@@ -30,6 +30,7 @@ function sideBarSetup() {
   svgSelect.style('font-size', '18px');
   svgSelect.option('pi symbol 1');
   svgSelect.option('pi symbol 2');
+  svgSelect.option('flying hawk');
   svgSelect.option('Russia Contour');
   svgSelect.option('Greek Letter');
   svgSelect.option('Apple logo');
@@ -107,7 +108,10 @@ function svgSelectReaction() {
     } else if (selectVal == "pi symbol 2") {
       path = getPath("svg_files/Pi-symbol.svg");
       initialize();
-    } else if (selectVal == "Russia Contour") {
+    } else if (selectVal == "flying hawk") {
+      path = getPath("svg_files/hawk.svg");
+      initialize();
+    }else if (selectVal == "Russia Contour") {
       path = getPath("svg_files/Russia.svg");
       initialize();
     } else if (selectVal == "Greek Letter") {

@@ -11,7 +11,7 @@ function sideBarSetup() {
   numVectirSlider.position(150, 60);
   numVectirSlider.style('width', '160px');
   // setup rate slider
-  rateSlider = createSlider(0.2, 2.5, 1, 0.1);
+  rateSlider = createSlider(0.1, 2.5, 1, 0.1);
   rateSlider.position(150, 100);
   rateSlider.style('width', '160px');
   // setup speed slider
@@ -30,6 +30,7 @@ function sideBarSetup() {
   svgSelect.style('font-size', '18px');
   svgSelect.option('pi符号1');
   svgSelect.option('pi符号2');
+  svgSelect.option('飞翔猎鹰');
   svgSelect.option('俄罗斯轮廓');
   svgSelect.option('希腊字母Xi');
   svgSelect.option('苹果logo');
@@ -74,7 +75,7 @@ function setStaticMode() {
   rate = lastRate = 1;
   // reset rate slider
   rateSlider.remove();
-  rateSlider = createSlider(0.2, 2.5, 1, 0.1);
+  rateSlider = createSlider(0.1, 2.5, 1, 0.1);
   rateSlider.position(150, 100);
   rateSlider.style('width', '160px');
   // reset speed slider
@@ -106,6 +107,9 @@ function svgSelectReaction() {
       initialize();
     } else if (selectVal == "pi符号2") {
       path = getPath("svg_files/Pi-symbol.svg");
+      initialize();
+    } else if (selectVal == "飞翔猎鹰") {
+      path = getPath("svg_files/hawk.svg");
       initialize();
     } else if (selectVal == "俄罗斯轮廓") {
       path = getPath("svg_files/Russia.svg");
