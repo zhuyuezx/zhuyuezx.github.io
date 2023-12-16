@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "UTLeetCoder - leetcode activities statistics website for registered UofT students"
-date:   2022-09-22 20:11:00
+date:   2023-01-20 20:11:00
 category: Coding
 image: /images/image-21.jpg
 ---
@@ -39,3 +39,11 @@ Furthermore, we got the leetcode api for total problem solving and contest ranki
 ## Frontend Design
 
 For the frontend, we used React.js and Ant Design for the UI design. We also used React Router to implement the routing mechanism. Although there's not much to say about frontend programming, it really help me to re-familiarize with the React I learned from course and get more experience in React.
+
+## Developer: Ethan, Thomas, and Me
+![us](/post-images/UTleetcoder/3.png)
+
+We are roommates currently and registered a organization [XFT-Tech](https://github.com/XFTTech) where we put all our collaborative projects there. And here are the links to their github homepages:
+- [Ethan](https://github.com/Ethan-ZYF)
+- [Thomas](https://github.com/Yorafa)
+- [Me](https://github.com/zhuyuezx)
