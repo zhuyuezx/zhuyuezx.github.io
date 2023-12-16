@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "UTLeetCoder - leetcode activities statistics website for registered UofT students"
-date:   2023-01-20 20:11:00
+title:  "UTLeetCoder - Leetcode Statistics for Registered UofT Students"
+date:   2023-01-20 13:05:00
 category: Coding
 image: /images/image-21.jpg
 ---
