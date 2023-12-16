@@ -7,7 +7,7 @@ image: /images/image-21.jpg
 ---
 I've completed my web development course CSC309 at UofT last semester, and got some experience in building the backend and frontend of the website. So, together with my roommates Ethan and Thomas, we decided to build a website for UofT students to collect their leetcode activities and share their coding experience. Here is the link to our website: [UTLeetCoder](https://coder.xfttech.org/).
 
-![daily_rank](/post-images/UTLeetCoder/1.png)
+![daily_rank](/post-images/UTleetcoder/1.png)
 
 ## Core Mechanism
 
@@ -32,7 +32,7 @@ First, we maintain a list of the registered users in the database (we didn't ope
 
 With those submission data obtained, we split each user's data into daily rankings, daily easy/medium/hard difficulty countings, and maintain a user specific profile page. Here is the screenshot, and by clinking the colored bar, you can see detailed list of submissions in all history.
 
-![user_profile](/post-images/UTLeetCoder/2.png)
+![user_profile](/post-images/UTleetcoder/2.png)
 
 Furthermore, we got the leetcode api for total problem solving and contest ranking, enabling us to setup a ranking podium for users - one for total problem solving, and one for contest ranking. 
 
