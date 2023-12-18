@@ -10,7 +10,7 @@ I was introduced to deepdream in one CSC413 lecture about neural network interpr
 
 <iframe width="960" height="640" src="https://www.youtube.com/embed/UPPRE8dryVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-And here is the link to my github repo: [Deepdream Video Transfer](https://github.com/zhuyuezx/neural-dream), where you can find more detail inside [README.md](https://github.com/zhuyuezx/neural-dream/blob/master/README.md). Also, I've provided a google colab notebook where you can try it directly without worrying about GPU and dependencies: [notebook here](https://colab.research.google.com/drive/1cGsbUHWECPCAjSV7_mKuS3t7IWC7kHSf?usp=sharing)!
+**And here is the link to my github repo: [Deepdream Video Transfer](https://github.com/zhuyuezx/neural-dream), where you can find more detail inside [README.md](https://github.com/zhuyuezx/neural-dream/blob/master/README.md). Also, I've provided a google colab notebook where you can try it directly without worrying about GPU and dependencies: [notebook here](https://colab.research.google.com/drive/1cGsbUHWECPCAjSV7_mKuS3t7IWC7kHSf?usp=sharing)!**
 
 ## What is deepdream
 
