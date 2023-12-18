@@ -20,6 +20,7 @@ After moving away from downtown Toronto, a car is necessary for shopping and dai
 
 I would say that Markham office really has a decent working environment, as each employee has a enclosed working space (great for concentration), with many occasional events (also free food). I've been working with the ADDI team and participating in the development cycle, where I've gained experience in frontend development and CI/CD pipeline. Recently, I'm working on the vscode extension for the ADDI platform.
 
+Nice summer sky view shot near the office:
 <img src="/post-images/Moving-to-Markham/2.jpg" alt="office" width="580"/>
 
 ## Some Random Stuff
