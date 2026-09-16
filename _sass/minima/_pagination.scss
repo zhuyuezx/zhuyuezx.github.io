@@ -1,0 +1,62 @@
+// Pager for the archive and category feeds (see assets/js/pagination.js).
+// Hidden entirely when there is only one page, since the script never
+// builds the nav in that case.
+.pager {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-top: 30px;
+    padding-top: 16px;
+    border-top: 2px solid lightgray;
+
+    .pager-btn {
+        min-width: 34px;
+        padding: 5px 10px;
+        font-family: inherit;
+        font-size: 11pt;
+        line-height: 1.2;
+        color: $text-color;
+        background-color: #fff;
+        border: 1px solid $grey-color-light;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover:not(:disabled) {
+            border-color: $brand-color;
+            color: $brand-color;
+        }
+
+        &:disabled {
+            color: $grey-color-light;
+            cursor: default;
+        }
+
+        &.is-current {
+            background-color: $brand-color;
+            border-color: $brand-color;
+            color: #fff;
+            font-weight: bold;
+            cursor: default;
+        }
+    }
+
+    .pager-step {
+        font-size: 10.5pt;
+    }
+
+    .pager-gap {
+        padding: 0 2px;
+        color: $grey-color;
+    }
+
+    .pager-count {
+        margin-left: auto;
+        font-size: 10pt;
+        color: $grey-color;
+    }
+}
+
+@include media-query($on-palm) {
+    .pager .pager-count { display: none; }
+}

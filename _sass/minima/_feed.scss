@@ -185,3 +185,85 @@
         font-size: 10pt;
     }
 }
+
+// Tag chips on the archive page. The links used to carry .page-link, which is
+// scoped to .site-header, so in the archive body they picked up no styling.
+.archive .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0 0 $spacing-unit / 2;
+    padding: 0;
+}
+
+.archive .tag-item {
+    margin: 0;
+}
+
+.archive .tag-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 8px 5px 11px;
+    font-size: 11pt;
+    line-height: 1.2;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid $grey-color-light;
+    border-radius: 999px;
+    transition: border-color 0.15s ease, color 0.15s ease;
+
+    &:link,
+    &:visited {
+        color: $text-color;
+    }
+
+    &:hover,
+    &:focus-visible {
+        color: $brand-color;
+        border-color: $brand-color;
+        text-decoration: none;
+
+        .tag-count {
+            background-color: $brand-color;
+            color: #fff;
+        }
+    }
+
+    .tag-hash {
+        color: $grey-color;
+        font-weight: bold;
+    }
+
+    .tag-count {
+        min-width: 22px;
+        padding: 1px 7px;
+        font-size: 9.5pt;
+        text-align: center;
+        color: $grey-color-dark;
+        background-color: $grey-color-light;
+        border-radius: 999px;
+        transition: background-color 0.15s ease, color 0.15s ease;
+    }
+}
+
+
+// "Archive" heading with the total post count pushed to the right.
+.archive .archive-bar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: $spacing-unit / 2;
+
+    h2 {
+        margin-bottom: 0;
+    }
+}
+
+.archive .archive-total {
+    font-size: 10.5pt;
+    color: $grey-color;
+    white-space: nowrap;
+}

@@ -1,7 +1,11 @@
+{%- assign perPage = site.posts_per_page | default: 10 -%}
 <section class="{{sectionName}}">
     {%- assign feedPosts = site.posts | where: 'categories', feedType -%}
+    {%- if paginate -%}
+    <div class="paginated" data-paginate data-per-page="{{ perPage }}" data-pager-label="posts">
+    {%- endif -%}
     {%- for post in feedPosts offset: displayOffset limit: displayLimit -%}
-        <div class="feed-card">
+        <div class="feed-card"{% if paginate %} data-page-item{% endif %}>
             <div class="card-image">
                 {%- assign postImage = post.image | relative_url -%}
                 {%- if postImage -%}
@@ -28,4 +32,7 @@
             </div>
         </div>
     {%- endfor -%}
+    {%- if paginate -%}
+    </div>
+    {%- endif -%}
 </section>

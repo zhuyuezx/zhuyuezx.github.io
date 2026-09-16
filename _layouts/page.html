@@ -17,6 +17,7 @@ layout: default
     {%- assign displayOffset = 0 -%}
     {%- assign displayLimit = 1 -%}
     {%- assign sectionName = "featured-post" -%}
+    {%- assign paginate = false -%}
     {% include feed.html %}
   {%- endif -%}
 
@@ -26,6 +27,7 @@ layout: default
     {%- assign displayOffset = 1 -%}
     {%- assign displayLimit = null -%}
     {%- assign sectionName = "feed" -%}
+    {%- assign paginate = true -%}
     {% include feed.html %}
   {%- endif -%}
 
@@ -36,3 +38,8 @@ layout: default
   {%- endif -%}
 
 </article>
+
+{%- assign feedType = page.feed-type -%}
+{%- if feedType == "Coding" or feedType == "Daily" or feedType == "Research" or feedType == "Archive" -%}
+  <script src="{{ '/assets/js/pagination.js' | relative_url }}" defer></script>
+{%- endif -%}
