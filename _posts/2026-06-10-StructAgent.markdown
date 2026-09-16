@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "StructAgent - Driving Closed UIs with a Symbolic UI Graph"
-date:   2026-09-16 11:20:00
+date:   2026-06-10 11:20:00
 category: Research
 image: /images/image-29.png
 ---
