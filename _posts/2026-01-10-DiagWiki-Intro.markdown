@@ -3,7 +3,7 @@ layout: post
 title:  "DiagWiki - Agentic AI Tool for Structured Diagram Generation"
 date:   2026-01-10 16:27:00
 category: Coding
-image: /images/image-27.jpg
+image: /images/image-27.png
 ---
 
 ## Motivation Behind
