@@ -8,14 +8,14 @@ image: /images/image-28.jpg
 
 So the cover image is taken at the 28F of Lincoln Square South, where the Bytedance Office is located. The canteen is located at 28F, an ideal place to have a 360 degree view of Bellevue and downtown Seattle over the lake. 
 ## Backend Engineer Internship at Bytedance Bellevue office
-![rainbow from office](/post-images/2026-summer-seattle/rainbow.JPG)
+![rainbow from office](/post-images/2026-summer-seattle/rainbow.jpg)
 
 Here are some interesting pieces of summer life at Washington State!
 
 ### July 4th Firework Show
 
 Although saw similar firework back at Canada, it's still fresh experience in US.
-![July 4th Firework Show](/post-images/2026-summer-seattle/firework.JPG)
+![July 4th Firework Show](/post-images/2026-summer-seattle/firework.jpg)
 
 ### University of Washington
 
