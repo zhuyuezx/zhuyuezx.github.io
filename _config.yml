@@ -28,8 +28,9 @@ twitter_username: zhuyuezx1
 github_username:  zhuyuezx
 bilibili_username: zhuyuezx
 
-# posts per page for the archive and category feeds (assets/js/pagination.js)
-posts_per_page: 10
+# posts per page (assets/js/pagination.js)
+posts_per_page: 10          # category feeds: Coding / Daily / Research
+archive_posts_per_page: 20  # the Archive page
 
 # enable showing excerpts and some details
 show_excerpts: true
